@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_marginTop="192dp"
+        android:text="Comment:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtComment"
+        android:layout_width="238dp"
+        android:layout_height="133dp"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_below="@+id/textView6"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtComment"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
+        android:text="Submit"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+</RelativeLayout>
